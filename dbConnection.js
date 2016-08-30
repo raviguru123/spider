@@ -1,6 +1,7 @@
 var mongoose=require("mongoose");
+var config=require("./config");
 
-var dbaddress="mongodb://127.0.0.1:27017/fbdata";
+var dbaddress=config.dbAddress;
 mongoose.connect(dbaddress);
 
 var db=mongoose.connection;
