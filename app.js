@@ -11,9 +11,10 @@ category=require("./moduleController/category");
 var app=express();
 
 artist.init();
-dj.init();
-band.init();
-category.init();
+//dj.init();
+//band.init();
+//category.init();
+
 app.listen(config.port,function(){
 	console.log("server is running in port",config.port);
 });
