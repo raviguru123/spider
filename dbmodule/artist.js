@@ -3,7 +3,7 @@ var mongoose=require("../dbConnection");
 var artistSchema=mongoose.Schema({}, { strict: false });
 
 
-var artist=mongoose.model("artist",artistSchema,"artist");
+var artist=mongoose.model("artist",artistSchema,"artist1");
 module.exports.saveArtist=function(data,callback){
 	var artistData=new artist(data);
 	artistData.save(function(error,result){
