@@ -3,7 +3,7 @@ var mongoose=require("../dbConnection");
 var artistSchema=mongoose.Schema({}, { strict: false });
 
 
-var artist=mongoose.model("artist",artistSchema,"artist1");
+var artist=mongoose.model("artist",artistSchema,"artist");
 module.exports.saveArtist=function(data,callback){
 	var artistData=new artist(data);
 	artistData.save(function(error,result){
@@ -15,10 +15,6 @@ module.exports.saveArtist=function(data,callback){
 		}
 	});
 }
-
-
-
-
 
 var bandSchema2321=mongoose.Schema({
 	name:String,
@@ -33,6 +29,7 @@ module.exports.getAllData=function(callback){
 		{
 			console.log("error occured");
 		}
+		console.log("result",result);
 		callback(result);
 	});
 
