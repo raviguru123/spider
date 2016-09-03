@@ -10,8 +10,8 @@ category=require("./moduleController/category");
 
 var app=express();
 
-artist.init();
-//dj.init();
+//artist.init();
+dj.init();
 //band.init();
 //category.init();
 
