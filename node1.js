@@ -44,6 +44,7 @@ function readFile(filename){
 
 var fileUrl=["./config.js","./app.js"];
 
+
 var url=fileUrl.map(readFile);
 
 Promise.all(url).then(texts=>{
